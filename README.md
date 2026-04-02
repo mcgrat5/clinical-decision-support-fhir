@@ -1,5 +1,7 @@
 # Clinical Decision Support System (FHIR + CDS Hooks)
 
+Full stack clinical decision support system built with FHIR data, CDS Hooks, and interactive dashboards
+
 ## Overview
 This project is a full-stack healthcare application that processes FHIR patient data and provides clinical decision support using CDS Hooks. This system is designed to analyze patient information and generates alerts for age-based preventive screening.
 
@@ -18,7 +20,7 @@ This project is a full-stack healthcare application that processes FHIR patient 
 
 ## How it works
 1) FHIR NDJSON data is ingested and stored in MongoDB
-2) CDS Hooks service evaluates patient data (only works for patients age 45 or older)
+2) CDS Hooks service evaluates patient data (applies to patients age 45 and older)
 3) Once triggered, the service returns a clinical recommendation
 4) The Streamlit app visualizes patient conditions, medications, and screening data
 
@@ -26,16 +28,16 @@ This project is a full-stack healthcare application that processes FHIR patient 
 Examples of system interface and clinical data visualizations
 
 ### Patient Dashboard (Eligible for Screening)
-![Dashboard](Screenshots/dashboard_main.png)
+![Dashboard](screenshots/dashboard_main.png)
 
 ### Clinical Conditions with ICD-10 Mapping
-![Conditions](Screenshots/clinical_conditions.png)
+![Conditions](screenshots/clinical_conditions.png)
 
 ### Clinician Notes Interface
-![Notes](Screenshots/clinician_notes.png)
+![Notes](screenshots/clinician_notes.png)
 
 ### Age Access Restriction
-![Restriction](Screenshots/age_restriction.png)
+![Restriction](screenshots/age_restriction.png)
 
 ## Setup Instructions
 1) Clone the repository
